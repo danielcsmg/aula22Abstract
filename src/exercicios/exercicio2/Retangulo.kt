@@ -2,15 +2,21 @@ package exercicios.exercicio2
 
 open class Retangulo(private val largura: Float, private val altura: Float): Forma() {
     open val forma = "retângulo"
-    override fun calcularArea() {
-        val area = largura * altura
-        println("A área do $forma é de $area")
+    override fun calcularArea(): Float {
+        return largura * altura
+    }
+
+    override fun mostrarArea(){
+        println("A área do $forma é de ${calcularArea()}.")
         println()
     }
 
-    override fun calcularPerimetro() {
-        val perimetro = 2f * (largura + altura)
-        println("O perímetro do $forma é de $perimetro.")
+    override fun calcularPerimetro(): Float {
+        return 2f * (largura + altura)
+    }
+
+    override fun mostrarPerimetro(){
+        println("O perímetro do $forma é de ${calcularPerimetro()}.")
         println()
     }
 }

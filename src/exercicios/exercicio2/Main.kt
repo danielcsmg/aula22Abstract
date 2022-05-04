@@ -18,7 +18,7 @@ fun main() {
     formas.add(quadrado2)
 
     formas.forEach{
-        it.calcularArea()
-        it.calcularPerimetro()
+        it.mostrarArea()
+        it.mostrarPerimetro()
     }
 }
